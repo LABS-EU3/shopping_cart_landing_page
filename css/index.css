@@ -139,6 +139,7 @@ body {
 }
 body {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 body .first-view {
   width: 100vw;
@@ -147,10 +148,8 @@ body .first-view {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rebeccapurple;
 }
 body .first-view .main-container {
-  background-color: sandybrown;
   width: 95%;
   height: 95%;
   display: flex;
@@ -164,7 +163,6 @@ body .first-view .main-container .header {
   width: 100%;
   box-sizing: border-box;
   display: flex;
-  background-color: orchid;
 }
 body .first-view .main-container .header nav {
   height: 100%;
@@ -176,19 +174,30 @@ body .first-view .main-container .header nav {
 body .first-view .main-container .header nav ul {
   height: 100%;
   display: flex;
+  font-size: 1.6rem;
 }
 body .first-view .main-container .header nav .left-and-right {
   width: 25%;
-  background-color: pink;
+}
+body .first-view .main-container .header nav .left-and-right li {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body .first-view .main-container .header nav .mid {
   width: 45%;
 }
+body .first-view .main-container .header nav .mid li {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body .first-view .main-container .content {
-  height: 100%;
+  height: 90%;
   box-sizing: border-box;
   display: flex;
-  background-color: palegoldenrod;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -196,5 +205,76 @@ body .first-view .main-container .content {
 body .first-view .main-container .content .content-box {
   height: 100%;
   width: 48%;
-  background-color: palevioletred;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .first-view .main-container .content .content-box .copy {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5rem;
+}
+body .first-view .main-container .content .content-box .copy .main-text {
+  height: 35%;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+body .first-view .main-container .content .content-box .copy .main-text h1 {
+  font-size: 4.5rem;
+  font-family: 'PT Serif', serif;
+}
+body .first-view .main-container .content .content-box .copy .list {
+  height: 35%;
+  width: 100%;
+}
+body .first-view .main-container .content .content-box .copy .list p {
+  font-size: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+body .first-view .main-container .content .content-box .copy .testemonials {
+  height: 25%;
+  width: 100%;
+  font-size: 1.4rem;
+}
+body .first-view .main-container .content .image {
+  width: 58%;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+body .first-view .main-container .content .image .phones {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+body .first-view .main-container .content .image .phones img {
+  height: 90%;
+}
+body .first-view .main-container .content .image .first {
+  margin-right: -6rem;
+  z-index: 1;
+  padding-right: 0;
+  margin-bottom: -12rem;
+}
+body .first-view .main-container .content .image .second {
+  justify-content: flex-start;
+}
+.second-view {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow;
 }
