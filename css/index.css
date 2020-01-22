@@ -140,6 +140,8 @@ body {
 body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 body .first-view {
   width: 100vw;
@@ -148,6 +150,7 @@ body .first-view {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #787878;
 }
 body .first-view .main-container {
   width: 95%;
@@ -165,7 +168,7 @@ body .first-view .main-container .header {
   display: flex;
 }
 body .first-view .main-container .header nav {
-  height: 100%;
+  height: 90%;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -176,14 +179,29 @@ body .first-view .main-container .header nav ul {
   display: flex;
   font-size: 1.6rem;
 }
+body .first-view .main-container .header nav ul li {
+  cursor: pointer;
+}
 body .first-view .main-container .header nav .left-and-right {
   width: 25%;
+  justify-content: space-around;
+}
+body .first-view .main-container .header nav .left-and-right .pure {
+  color: #FF6663;
+  font-weight: bold;
+}
+body .first-view .main-container .header nav .left-and-right .enter:hover {
+  border-bottom: solid 2px #FF6663;
+  padding-bottom: 0.2rem;
 }
 body .first-view .main-container .header nav .left-and-right li {
-  width: 50%;
+  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+body .first-view .main-container .header nav .left {
+  padding-right: 10rem;
 }
 body .first-view .main-container .header nav .mid {
   width: 45%;
@@ -201,6 +219,7 @@ body .first-view .main-container .content {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  padding-top: 4rem;
 }
 body .first-view .main-container .content .content-box {
   height: 100%;
@@ -217,7 +236,7 @@ body .first-view .main-container .content .content-box .copy {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-left: 5rem;
+  padding-left: 8rem;
 }
 body .first-view .main-container .content .content-box .copy .main-text {
   height: 35%;
@@ -226,23 +245,45 @@ body .first-view .main-container .content .content-box .copy .main-text {
   display: flex;
   box-sizing: border-box;
   align-items: center;
+  margin-bottom: 1rem;
 }
 body .first-view .main-container .content .content-box .copy .main-text h1 {
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-family: 'PT Serif', serif;
+  word-spacing: 1.5rem;
+  line-height: 1.3;
+  color: black;
+  font-weight: bold;
 }
 body .first-view .main-container .content .content-box .copy .list {
   height: 35%;
   width: 100%;
+  margin-bottom: 1.3rem;
 }
 body .first-view .main-container .content .content-box .copy .list p {
   font-size: 1.5rem;
   margin-bottom: 1.3rem;
+  color: #787878;
+}
+body .first-view .main-container .content .content-box .copy .list button {
+  border: 0;
+  padding: 1.3rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  background-color: #FF6663;
+  color: white;
 }
 body .first-view .main-container .content .content-box .copy .testemonials {
   height: 25%;
   width: 100%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+}
+body .first-view .main-container .content .content-box .copy .testemonials #names {
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+body .first-view .main-container .content .content-box .copy .testemonials #names span {
+  font-weight: bold;
 }
 body .first-view .main-container .content .image {
   width: 58%;
@@ -276,5 +317,88 @@ body .first-view .main-container .content .image .second {
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: yellow;
+  color: #787878;
+  background-image: url('../images/halftone-yellow.png');
+  background-repeat: repeat;
+}
+.second-view .yellow-page {
+  width: 90%;
+  height: 97%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.second-view .yellow-page .top-text {
+  height: 16%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second-view .yellow-page .top-text .head {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second-view .yellow-page .top-text .head h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'PT Serif', serif;
+  text-align: center;
+}
+.second-view .yellow-page .shots {
+  height: 84%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second-view .yellow-page .shots .shot-block {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.second-view .yellow-page .shots .shot-block .screens {
+  width: 32%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.second-view .yellow-page .shots .shot-block .screens img {
+  height: 80%;
+  width: 100%;
+}
+.second-view .yellow-page .shots .shot-block .screens .text-box {
+  width: 100%;
+  padding-left: 1.3rem;
+  padding-right: 0;
+}
+.second-view .yellow-page .shots .shot-block .screens .text-box h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'PT Serif', serif;
+  color: black;
+  margin-bottom: 0.8rem;
+}
+.second-view .yellow-page .shots .shot-block .screens .text-box p {
+  font-size: 1.3rem;
+  width: 100%;
+  line-height: 1.2;
+  color: black;
+}
+.second-view .yellow-page .shots .shot-block .onethree {
+  margin-bottom: -6rem;
+}
+.second-view .yellow-page .shots .shot-block .two {
+  margin-top: -8rem;
 }
