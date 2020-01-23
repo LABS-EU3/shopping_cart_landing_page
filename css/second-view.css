@@ -91,9 +91,20 @@
   margin-top: -8rem;
 }
 @media only screen and (max-width: 600px) {
+  .second-view .yellow-page .shots .shot-block .screens .text-box h3 {
+    font-size: 2.4em;
+  }
+  .second-view .yellow-page .shots .shot-block .screens {
+    height: 25rem;
+    padding-top: 120px;
+  }
+  .second-view .yellow-page .shots .shot-block .screens .text-box p {
+    font-size: 1.9rem;
+  }
   .second-view img {
     width: 50%;
     height: 100%;
+    display: none;
   }
   .second-view .yellow-page .shots .shot-block .screens {
     display: flex;

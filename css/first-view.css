@@ -62,10 +62,6 @@ body .first-view .main-container .header nav .left-and-right .enter:hover {
   border-bottom: solid 2px #FF6663;
   padding-bottom: 0.2rem;
 }
-body .first-view .main-container .header nav .left-and-right #enter {
-  border-bottom: solid 2px #FF6663;
-  padding-bottom: 0.2rem;
-}
 body .first-view .main-container .header nav .left-and-right li {
   width: 25%;
   display: flex;
