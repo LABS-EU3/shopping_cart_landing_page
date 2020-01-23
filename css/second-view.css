@@ -1,0 +1,92 @@
+.second-view {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  color: #787878;
+  background-image: url('../images/halftone-yellow.png');
+  background-repeat: repeat;
+}
+.second-view .yellow-page {
+  width: 90%;
+  height: 97%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.second-view .yellow-page .top-text {
+  height: 16%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second-view .yellow-page .top-text .head {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second-view .yellow-page .top-text .head h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'PT Serif', serif;
+  text-align: center;
+}
+.second-view .yellow-page .shots {
+  height: 84%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second-view .yellow-page .shots .shot-block {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.second-view .yellow-page .shots .shot-block .screens {
+  width: 32%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.second-view .yellow-page .shots .shot-block .screens img {
+  height: 80%;
+  width: 100%;
+}
+.second-view .yellow-page .shots .shot-block .screens .text-box {
+  width: 100%;
+  padding-left: 1.3rem;
+  padding-right: 0;
+}
+.second-view .yellow-page .shots .shot-block .screens .text-box h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'PT Serif', serif;
+  color: black;
+  margin-bottom: 0.8rem;
+}
+.second-view .yellow-page .shots .shot-block .screens .text-box p {
+  font-size: 1.3rem;
+  width: 100%;
+  line-height: 1.2;
+  color: black;
+}
+.second-view .yellow-page .shots .shot-block .onethree {
+  margin-bottom: -6rem;
+}
+.second-view .yellow-page .shots .shot-block .two {
+  margin-top: -8rem;
+}
