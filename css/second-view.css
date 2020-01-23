@@ -90,3 +90,26 @@
 .second-view .yellow-page .shots .shot-block .two {
   margin-top: -8rem;
 }
+@media only screen and (max-width: 600px) {
+  .second-view img {
+    width: 50%;
+    height: 100%;
+  }
+  .second-view .yellow-page .shots .shot-block .screens {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .second-view .yellow-page .shots .shot-block {
+    display: block;
+    width: 95vw;
+  }
+  .second-view .yellow-page .top-text .head {
+    width: 90vw;
+  }
+  .second-view .yellow-page .top-text .head h1 {
+    padding-top: 4em;
+    font-size: 3em;
+    width: 100vw;
+  }
+}

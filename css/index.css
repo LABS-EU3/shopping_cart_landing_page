@@ -161,6 +161,11 @@ body .first-view .main-container {
   justify-content: center;
   align-items: center;
 }
+body .first-view .main-container .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 body .first-view .main-container .header {
   height: 10%;
   width: 90%;
@@ -186,6 +191,7 @@ body .first-view .main-container .header nav ul li {
 body .first-view .main-container .header nav .left-and-right {
   width: 25%;
   justify-content: space-around;
+  text-decoration: none;
 }
 body .first-view .main-container .header nav .left-and-right .pure {
   color: #FF6663;
@@ -195,11 +201,16 @@ body .first-view .main-container .header nav .left-and-right .enter:hover {
   border-bottom: solid 2px #FF6663;
   padding-bottom: 0.2rem;
 }
+body .first-view .main-container .header nav .left-and-right #enter {
+  border-bottom: solid 2px #FF6663;
+  padding-bottom: 0.2rem;
+}
 body .first-view .main-container .header nav .left-and-right li {
   width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 body .first-view .main-container .header nav .left {
   padding-right: 10rem;
@@ -249,7 +260,7 @@ body .first-view .main-container .content .content-box .copy .main-text {
   margin-bottom: 1rem;
 }
 body .first-view .main-container .content .content-box .copy .main-text h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   font-family: 'PT Serif', serif;
   line-height: 1.3;
   color: black;
@@ -275,7 +286,7 @@ body .first-view .main-container .content .content-box .copy .list p {
   font-size: 2rem;
   margin-bottom: 1.3rem;
   color: #424242;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
 }
 body .first-view .main-container .content .content-box .copy .list button {
   border: 0;
@@ -331,22 +342,43 @@ body .first-view .main-container .content .image .second {
   }
   body .first-view .main-container .content .content-box {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
+  }
+  body .first-view .main-container .header nav .mid {
+    display: none;
+  }
+  body .first-view .main-container .header nav .left-and-right {
+    width: 50%;
+  }
+  body .first-view .main-container .header nav .left-and-right li {
+    width: 50%;
+  }
+  body .first-view .main-container .content .content-box .copy .main-text h1 {
+    font-size: 4.5em;
   }
   body .first-view .main-container .content .content-box .copy .list button {
     display: block;
-    margin-top: 80px;
     margin-left: 20vw;
     font-size: 2em;
+    margin-top: 30px;
+  }
+  body .first-view .main-container .content .content-box .copy .testemonials {
+    text-align: center;
   }
   body .first-view .main-container .content .content-box .copy {
     padding: 1rem;
   }
+  body .first-view .main-container .content .content-box .copy .list {
+    margin: 0;
+  }
   body .first-view .main-container .content .content-box .copy .list p {
     padding-top: 10px;
     line-height: normal;
-    font-size: 1.3em;
-    display: none;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 3rem;
   }
   body .main-container {
     width: 100vw;
@@ -361,13 +393,13 @@ body .first-view .main-container .content .image .second {
   body .main-container .content {
     width: 100%;
     display: flex;
+    padding: 0;
   }
   body .main-container .content .copy {
     display: flex;
     justify-content: center;
   }
   body .main-container .content .main-text h1 {
-    padding-top: 1em;
     font-size: 0.1em;
     line-height: normal;
     width: 98vw;
@@ -469,4 +501,27 @@ body .first-view .main-container .content .image .second {
 }
 .second-view .yellow-page .shots .shot-block .two {
   margin-top: -8rem;
+}
+@media only screen and (max-width: 600px) {
+  .second-view img {
+    width: 50%;
+    height: 100%;
+  }
+  .second-view .yellow-page .shots .shot-block .screens {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .second-view .yellow-page .shots .shot-block {
+    display: block;
+    width: 95vw;
+  }
+  .second-view .yellow-page .top-text .head {
+    width: 90vw;
+  }
+  .second-view .yellow-page .top-text .head h1 {
+    padding-top: 4em;
+    font-size: 3em;
+    width: 100vw;
+  }
 }
