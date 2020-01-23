@@ -15,7 +15,7 @@ body {
         color: #787878;
 
         .main-container {
-            width: 100%;
+            width: 95%;
             height: 95%;
             display: flex;
             flex-direction: column;
@@ -25,20 +25,10 @@ body {
 
             .header {
                 height: 10%;
-                width: 90%;
+                width: 100%;
                 box-sizing: border-box;
                 display: flex;
-                border-bottom: 0.3px solid #c5c5c5;
-            
-                // .sticky {
-                //     position: fixed;
-                //     top: 0;
-                //     width: 100%
-                //   }
-
-                //   .sticky + .content {
-                //     padding-top: 102px;
-                //   }
+                // border-bottom: 0.5px solid #787878;
 
 
                 nav {
@@ -134,24 +124,12 @@ body {
                             margin-bottom: 1rem;
 
                             h1 {
-                                font-size: 7rem;
+                                font-size: 5rem;
                                 font-family: 'PT Serif', serif;
-                                // word-spacing: 1.5rem;
+                                word-spacing: 1.5rem;
                                 line-height: 1.3;
                                 color: black;
                                 font-weight: bold;
-                                padding-bottom: 10px;
-                            }
-
-                            #easiest {
-                                text-decoration: underline #ff6663;
-                                animation: easiestMove 3s infinite;
-                            }
-
-                            @keyframes easiestMove {
-                                50% {
-                                    text-decoration-color: yellow;
-                                }
                             }
                         }
 
@@ -159,13 +137,11 @@ body {
                             height: 35%;
                             width: 100%;
                             margin-bottom: 1.3rem;
-                            margin-top: 3rem;
 
                             p {
-                                font-size: 2rem;
+                                font-size: 1.5rem;
                                 margin-bottom: 1.3rem;
-                                color: #424242;
-                                padding-bottom: 2rem;
+                                color: #787878;
                             }
 
                             button {
@@ -175,18 +151,16 @@ body {
                                 border-radius: 2rem;
                                 background-color: #FF6663;
                                 color: white;
-                                width: 20rem;
                             }
                         }
 
                         .testemonials {
-                            margin-top: 65px;
                             height: 25%;
                             width: 100%;
-                            font-size: 1.5rem;
+                            font-size: 1.2rem;
 
                             #names {
-                                font-size: 1.3rem;
+                                font-size: 1rem;
                                 padding-top: 1rem;
 
                                 span {
@@ -206,7 +180,7 @@ body {
                     justify-content: center;
 
                     .phones {
-                        width: 70%;
+                        width: 40%;
                         height: 100%;
                         display: flex;
                         justify-content: flex-end;
@@ -230,80 +204,5 @@ body {
                 }
             }
         }
-    }
-
-    
-}
-
-@media only screen and (max-width: 600px) {
-    body {
-    width: 100vw;
-    height: 100vh;
-    // background-color: green;
-    
-    .first-view .main-container .content .content-box {
-        width: 100vw;
-        height: 100%
-    }
-
-    .first-view .main-container .content .content-box .copy .list button {
-      display: block;
-      margin-top: 80px;
-      margin-left: 20vw;
-      font-size: 2em;
-
-    }
-
-    .first-view .main-container .content .content-box .copy {
-        padding: 1rem;
-    }
-
-    .first-view .main-container .content .content-box .copy .list p {
-        padding-top: 10px;
-        line-height: normal;
-        font-size: 1.3em;
-        display: none;
-    }
-    .main-container {
-        width: 100vw;
-        height: 100vh;
-        display: block;
-
-        
-
-        .header nav {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-        }
-
-        .content {
-            width: 100%;
-            display: flex;
-            
-            
-
-            .copy {
-                display: flex;
-                justify-content: center;
-            }
-            
-            
-            .main-text h1 {
-                padding-top: 1em;
-                font-size: 0.1em;
-                line-height: normal;
-                width: 98vw;
-                margin: 0 auto;
-                text-align: center;
-            }
-        }
-
-        .content .image .phones img {
-            display: none;
-        }
-    }
-
-    
     }
 }
