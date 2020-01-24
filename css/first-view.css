@@ -15,7 +15,7 @@ body .first-view {
 }
 body .first-view .main-container {
   width: 100%;
-  height: 95%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -26,13 +26,14 @@ body .first-view .main-container .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
 }
 body .first-view .main-container .header {
   height: 10%;
-  width: 90%;
+  width: 100%;
   box-sizing: border-box;
   display: flex;
-  border-bottom: 0.3px solid #c5c5c5;
+  background-color: #fff;
 }
 body .first-view .main-container .header nav {
   height: 90%;
@@ -125,12 +126,12 @@ body .first-view .main-container .content .content-box .copy .main-text h1 {
   padding-bottom: 10px;
 }
 body .first-view .main-container .content .content-box .copy .main-text #easiest {
-  text-decoration: underline #ff6663;
+  text-decoration: underline #a5a5a5;
   animation: easiestMove 3s infinite;
 }
 @keyframes easiestMove {
   50% {
-    text-decoration-color: yellow;
+    text-decoration-color: #000000;
   }
 }
 body .first-view .main-container .content .content-box .copy .list {
@@ -192,10 +193,14 @@ body .first-view .main-container .content .image .first {
 body .first-view .main-container .content .image .second {
   justify-content: flex-start;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
   body {
     width: 100vw;
     height: 100vh;
+    background-color: #eaec45;
+  }
+  body .first-view .main-container .header {
+    width: 100vw;
   }
   body .first-view .main-container .content .content-box {
     width: 100vw;
@@ -204,23 +209,42 @@ body .first-view .main-container .content .image .second {
   body .first-view .main-container .header nav .mid {
     display: none;
   }
+  body .pure {
+    padding-left: 50px;
+  }
   body .first-view .main-container .header nav .left-and-right {
     width: 50%;
+    color: #b8b8b8;
   }
   body .first-view .main-container .header nav .left-and-right li {
     width: 50%;
   }
   body .first-view .main-container .content .content-box .copy .main-text h1 {
-    font-size: 4.5em;
+    font-size: 3.7em;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: -150px;
+  }
+  body .first-view .main-container .content .image {
+    margin-top: -100px;
+    width: 70vw;
+  }
+  body .first-view .main-container .content .image .phones {
+    height: 86%;
   }
   body .first-view .main-container .content .content-box .copy .list button {
     display: block;
-    margin-left: 20vw;
     font-size: 2em;
-    margin-top: 30px;
+    margin-top: 10px;
   }
   body .first-view .main-container .content .content-box .copy .testemonials {
-    text-align: center;
+    text-align: left;
+    padding-left: 25px;
+    margin: 0;
+  }
+  body .first-view .main-container .content {
+    display: flex;
+    flex-direction: column;
   }
   body .first-view .main-container .content .content-box .copy {
     padding: 1rem;
@@ -228,11 +252,15 @@ body .first-view .main-container .content .image .second {
   body .first-view .main-container .content .content-box .copy .list {
     margin: 0;
   }
+  body .first-view .main-container .content .content-box .copy .list {
+    margin-top: -150px;
+    padding-left: 20px;
+  }
   body .first-view .main-container .content .content-box .copy .list p {
     padding-top: 10px;
     line-height: normal;
     font-size: 1.6em;
-    text-align: center;
+    text-align: left;
     padding: 0;
     margin: 0;
     line-height: 3rem;
@@ -262,8 +290,5 @@ body .first-view .main-container .content .image .second {
     width: 98vw;
     margin: 0 auto;
     text-align: center;
-  }
-  body .main-container .content .image .phones img {
-    display: none;
   }
 }
