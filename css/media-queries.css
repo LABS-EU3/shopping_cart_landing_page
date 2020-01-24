@@ -2,10 +2,11 @@
   body {
     margin: 0;
     padding: 0;
+    background-color: #000;
   }
   body .first-view {
     display: block;
-    height: 160vh;
+    height: 140vh;
   }
   body .first-view .main-container {
     display: block;
@@ -42,6 +43,7 @@
     width: 90vw;
     margin: 0 auto;
     padding: 0;
+    padding-top: 40px;
   }
   body .first-view .main-container .content .content-box .copy .main-text {
     display: block;
@@ -50,6 +52,7 @@
     font-size: 3.5em;
     margin: 0;
     padding: 0;
+    color: #dbdbdb;
   }
   body .first-view .main-container .content .content-box .copy .list {
     height: 100%;
@@ -59,6 +62,16 @@
   body .first-view .main-container .content .content-box .copy .list p {
     font-size: 1.7em;
     line-height: 1.2em;
+    color: #bebebe;
+  }
+  body .first-view .main-container .content .content-box .copy .list button {
+    border: 0;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    border-radius: 0.8rem;
+    background-color: #FF6663;
+    color: white;
+    width: 80vw;
   }
   body .first-view .main-container .content .content-box .copy .testemonials {
     margin: 0 auto;
@@ -93,55 +106,64 @@
   }
   body .second-view {
     display: block;
-    width: 110vw;
+    width: 105vw;
+    height: 100%;
   }
   body .second-view .yellow-page {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
   body .second-view .yellow-page .top-text {
-    display: block;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 20px;
   }
   body .second-view .yellow-page .top-text .head {
-    display: block;
+    width: 90vw;
+    margin: 0 auto;
+    padding-top: 10em;
+    padding-bottom: 5em;
   }
   body .second-view .yellow-page .top-text .head h1 {
     color: black;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-family: 'PT Serif', serif;
     text-align: center;
   }
   body .second-view .yellow-page .shots {
-    height: 84%;
+    height: 100%;
     width: 100%;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
   body .second-view .yellow-page .shots .shot-block {
-    width: 70%;
+    width: 80%;
     height: 100%;
     display: block;
     justify-content: space-around;
     align-items: center;
   }
   body .second-view .yellow-page .shots .shot-block .screens {
-    width: 32%;
+    width: 70vw;
     height: 85%;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 1.5rem;
   }
   body .second-view .yellow-page .shots .shot-block .screens img {
-    height: 80%;
-    width: 100%;
+    height: 100%;
+    width: 90vw;
+    border-radius: 7px;
   }
   body .second-view .yellow-page .shots .shot-block .screens .text-box {
     width: 100%;
-    padding-left: 1.3rem;
-    padding-right: 0;
+    padding: 0;
   }
   body .second-view .yellow-page .shots .shot-block .screens .text-box h3 {
     font-weight: bold;
@@ -157,9 +179,9 @@
     color: black;
   }
   body .second-view .yellow-page .shots .shot-block .onethree {
-    margin-bottom: -6rem;
+    width: 100vw;
   }
   body .second-view .yellow-page .shots .shot-block .two {
-    margin-top: -8rem;
+    width: 100vw;
   }
 }

@@ -3,10 +3,11 @@
     body {
         margin: 0;
         padding: 0;
+        background-color: #000;
 
         .first-view {
             display: block;
-            height: 160vh;
+            height: 140vh;
 
             .main-container {
                 display: block;
@@ -49,6 +50,7 @@
                             width: 90vw;
                             margin: 0 auto;
                             padding: 0;
+                            padding-top: 40px;
 
 
                             .main-text {
@@ -58,6 +60,7 @@
                                     font-size: 3.5em;
                                     margin: 0;
                                     padding: 0;
+                                    color: rgb(219, 219, 219);
                                 }
                             }
                             .list {
@@ -68,6 +71,17 @@
                                 p{
                                     font-size: 1.7em;
                                     line-height: 1.2em;
+                                    color: rgb(190, 190, 190);
+                                }
+
+                                button {
+                                border: 0;
+                                padding: 1.5rem;
+                                font-size: 1.4rem;
+                                border-radius: 0.8rem;
+                                background-color: #FF6663;
+                                color: white;
+                                width: 80vw;
                                 }
                             } 
 
@@ -121,22 +135,33 @@
 
         .second-view {
             display: block;
-            width: 110vw;
+            width: 105vw;
+            height: 100%;
             
         
             .yellow-page {
-                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                
         
                 .top-text {
-                    display: block;
+                    display: flex;
+                    justify-content: center;
+                    width: 100vw;
+                    padding-top: 20px;
         
                     .head {
-                        display: block;
+                        width: 90vw;
+                        margin: 0 auto;
+                        padding-top: 10em;
+                        padding-bottom: 5em;
         
                         h1 {
                             color: black;
                             font-weight: bold;
-                            font-size: 3rem;
+                            font-size: 2.8rem;
                             font-family: 'PT Serif', serif;
                             text-align: center;
         
@@ -145,38 +170,38 @@
                 }
         
                 .shots {
-                    height: 84%;
+                    height: 100%;
                     width: 100%;
-                    display: block;
+                    display: flex;
                     justify-content: center;
                     align-items: center;
         
                     .shot-block {
-                        width: 70%;
+                        width: 80%;
                         height: 100%;
                         display: block;
                         justify-content: space-around;
                         align-items: center;
         
                         .screens {
-                            width: 32%;
+                            width: 70vw;
                             height: 85%;
-                            display: block;
+                            display: flex;
                             justify-content: center;
                             align-items: center;
                             flex-direction: column;
-                            padding: 1.5rem;
+                            // padding: 1.5rem;
         
                             img {
-                                height: 80%;
-                                width: 100%;
+                                height: 100%;
+                                width: 90vw;
+                                border-radius: 7px;
                             }
         
                             .text-box {
                                 // height: 20%;
                                 width: 100%;
-                                padding-left: 1.3rem;
-                                padding-right: 0;
+                                padding:0;
         
                                 h3 {
                                     font-weight: bold;
@@ -196,11 +221,13 @@
                         }
         
                         .onethree {
-                            margin-bottom: -6rem;
+                            // margin-bottom: -6rem;
+                            width: 100vw;
                         }
         
                         .two {
-                            margin-top: -8rem;
+                            // margin-top: -8rem;
+                            width: 100vw;
                         }
                     }
                 }
