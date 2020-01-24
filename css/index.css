@@ -226,7 +226,6 @@ body .first-view .main-container .content {
   box-sizing: border-box;
   display: flex;
   width: 100%;
-  justify-content: space-between;
   align-items: center;
   padding-top: 4rem;
 }
@@ -331,105 +330,6 @@ body .first-view .main-container .content .image .first {
 }
 body .first-view .main-container .content .image .second {
   justify-content: flex-start;
-}
-@media only screen and (max-width: 850px) {
-  body {
-    width: 100vw;
-    height: 100vh;
-    background-color: #eaec45;
-  }
-  body .first-view .main-container .header {
-    width: 100vw;
-  }
-  body .first-view .main-container .content .content-box {
-    width: 100vw;
-    height: 100vh;
-  }
-  body .first-view .main-container .header nav .mid {
-    display: none;
-  }
-  body .pure {
-    padding-left: 50px;
-  }
-  body .first-view .main-container .header nav .left-and-right {
-    width: 50%;
-    color: #b8b8b8;
-  }
-  body .first-view .main-container .header nav .left-and-right li {
-    width: 50%;
-  }
-  body .first-view .main-container .content .content-box .copy .main-text h1 {
-    font-size: 3.7em;
-    text-align: left;
-    padding-left: 20px;
-    margin-top: -150px;
-  }
-  body .first-view .main-container .content .image {
-    margin-top: -100px;
-    width: 70vw;
-  }
-  body .first-view .main-container .content .image .phones {
-    height: 86%;
-  }
-  body .first-view .main-container .content .content-box .copy .list button {
-    display: block;
-    font-size: 2em;
-    margin-top: 10px;
-  }
-  body .first-view .main-container .content .content-box .copy .testemonials {
-    text-align: left;
-    padding-left: 25px;
-    margin: 0;
-  }
-  body .first-view .main-container .content {
-    display: flex;
-    flex-direction: column;
-  }
-  body .first-view .main-container .content .content-box .copy {
-    padding: 1rem;
-  }
-  body .first-view .main-container .content .content-box .copy .list {
-    margin: 0;
-  }
-  body .first-view .main-container .content .content-box .copy .list {
-    margin-top: -150px;
-    padding-left: 20px;
-  }
-  body .first-view .main-container .content .content-box .copy .list p {
-    padding-top: 10px;
-    line-height: normal;
-    font-size: 1.6em;
-    text-align: left;
-    padding: 0;
-    margin: 0;
-    line-height: 3rem;
-  }
-  body .main-container {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-  }
-  body .main-container .header nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
-  body .main-container .content {
-    width: 100%;
-    display: flex;
-    padding: 0;
-  }
-  body .main-container .content .copy {
-    display: flex;
-    justify-content: center;
-  }
-  body .main-container .content .main-text h1 {
-    font-size: 0.1em;
-    line-height: normal;
-    width: 98vw;
-    margin: 0 auto;
-    text-align: center;
-  }
 }
 .second-view {
   box-sizing: border-box;
@@ -555,5 +455,10 @@ body .first-view .main-container .content .image .second {
     padding-top: 4em;
     font-size: 3em;
     width: 100vw;
+  }
+}
+@media only screen and (max-width: 850px) {
+  body {
+    background-color: yellow;
   }
 }
