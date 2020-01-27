@@ -181,7 +181,7 @@ body .first-view .main-container .sticky {
 }
 body .first-view .main-container .header {
   background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 4px 0 #dddddd;
   padding-top: 1%;
   width: 100vw;
   z-index: 3;
@@ -202,13 +202,6 @@ body .first-view .main-container .header li a {
 body .first-view .main-container .header li a:hover,
 body .first-view .main-container .header .menu-btn:hover {
   background-color: #f4f4f4;
-}
-body .first-view .main-container .header .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
 }
 body .first-view .main-container .header .menu {
   clear: both;
@@ -440,7 +433,7 @@ body .first-view .content .image .second {
 }
 .second-view .yellow-page {
   background-color: #ffdb8c;
-  height: 100vh;
+  height: 110vh;
 }
 .second-view .yellow-page .top-text .head {
   font-size: 4em;
@@ -463,6 +456,7 @@ body .first-view .content .image .second {
   align-items: center;
   width: 27%;
   padding-top: 40px;
+  padding-bottom: 60px;
 }
 .second-view .yellow-page .mid-point .divider img {
   width: 400px;
@@ -477,6 +471,7 @@ body .first-view .content .image .second {
   font-family: 'Acme';
   color: #585858;
   line-height: 1.5;
+  margin-bottom: 50px;
 }
 @media only screen and (max-width: 850px) {
   body {
@@ -608,7 +603,7 @@ body .first-view .content .image .second {
     font-family: PT Serif;
   }
   body .second-view .yellow-page {
-    height: 215vh;
+    height: 250vh;
   }
   body .second-view .yellow-page .top-text .head {
     padding-top: 200px;
@@ -646,6 +641,20 @@ body .first-view .content .image .second {
     color: #585858;
     line-height: 1.5;
   }
+  body .cards {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  body .cards h2 {
+    font-size: 3em;
+  }
+  body .cards img {
+    width: 50vw;
+  }
   body footer {
     display: flex;
     flex-direction: column;
@@ -682,4 +691,22 @@ footer {
   align-items: flex-start;
   color: white;
   background-color: #ff6669;
+}
+.cards {
+  padding-top: 50px;
+}
+.cards h2 {
+  font-size: 4em;
+  font-family: 'PT Serif';
+  color: #2a2a3b;
+  text-align: center;
+}
+.cards img {
+  padding-top: 50px;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }

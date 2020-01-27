@@ -1,0 +1,18 @@
+.cards {
+  padding-top: 50px;
+}
+.cards h2 {
+  font-size: 4em;
+  font-family: 'PT Serif';
+  color: #2a2a3b;
+  text-align: center;
+}
+.cards img {
+  padding-top: 50px;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}

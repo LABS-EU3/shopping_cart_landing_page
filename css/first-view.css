@@ -42,7 +42,7 @@ body .first-view .main-container .sticky {
 }
 body .first-view .main-container .header {
   background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 4px 0 #dddddd;
   padding-top: 1%;
   width: 100vw;
   z-index: 3;
@@ -63,13 +63,6 @@ body .first-view .main-container .header li a {
 body .first-view .main-container .header li a:hover,
 body .first-view .main-container .header .menu-btn:hover {
   background-color: #f4f4f4;
-}
-body .first-view .main-container .header .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
 }
 body .first-view .main-container .header .menu {
   clear: both;
