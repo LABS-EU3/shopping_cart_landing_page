@@ -23,6 +23,17 @@ body {
             justify-content: center;
             align-items: center;
 
+            .navbar {
+                padding-left: 6%;
+                padding-right: 6%;
+                background-color: #fff;
+                width: 100%;
+                height: 10%;
+                padding-top: 1%;
+                font-size: 18px;
+            }
+            
+
             .sticky {
                 position: fixed;
                 top: 0;
@@ -30,23 +41,123 @@ body {
                 z-index: 999;
               }
 
-            .header {
-                height: 10%;
-                width: 100%;
-                box-sizing: border-box;
-                display: flex;
+              .header {
                 background-color: #fff;
-                // border-bottom: 0.3px solid #c5c5c5;
-
-                
-
-
+                box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+                padding-top: 1%;
+                // position: relative;
+                width: 100vw;
+                z-index: 3;
+              }
+              
+              .header ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                overflow: hidden;
+                background-color: #fff;
+              }
+              
+              .header li a {
+                display: block;
+                padding: 20px 20px;
+                border-right: 1px solid #f4f4f4;
+                text-decoration: none;
+              }
+              
+              .header li a:hover,
+              .header .menu-btn:hover {
+                background-color: #f4f4f4;
+              }
+              
+              .header .logo {
+                display: block;
+                float: left;
+                font-size: 2em;
+                padding: 10px 20px;
+                text-decoration: none;
+              }
+              
+              /* menu */
+              
+              .header .menu {
+                clear: both;
+                max-height: 0;
+                transition: max-height .2s ease-out;
+              }
+              
+              /* menu icon */
+              
+              .header .menu-icon {
+                cursor: pointer;
+                display: block;
+                float: right;
+                padding: 28px 20px;
+                position: relative;
+                user-select: none;
+              }
+              
+              .header .menu-icon .navicon {
+                background: #333;
+                display: block;
+                height: 2px;
+                position: relative;
+                transition: background .2s ease-out;
+                width: 18px;
+              }
+              
+              .header .menu-icon .navicon:before,
+              .header .menu-icon .navicon:after {
+                background: #333;
+                content: '';
+                display: block;
+                height: 100%;
+                position: absolute;
+                transition: all .2s ease-out;
+                width: 100%;
+              }
+              
+              .header .menu-icon .navicon:before {
+                top: 5px;
+              }
+              
+              .header .menu-icon .navicon:after {
+                top: -5px;
+              }
+              
+              /* menu btn */
+              
+              .header .menu-btn {
+                display: none;
+              }
+              
+              .header .menu-btn:checked ~ .menu {
+                max-height: 240px;
+              }
+              
+              .header .menu-btn:checked ~ .menu-icon .navicon {
+                background: transparent;
+              }
+              
+              .header .menu-btn:checked ~ .menu-icon .navicon:before {
+                transform: rotate(-45deg);
+              }
+              
+              .header .menu-btn:checked ~ .menu-icon .navicon:after {
+                transform: rotate(45deg);
+              }
+              
+              .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+              .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+                top: 0;
+              }
                 nav {
                     height: 90%;
-                    width: 100%;
+                    width: 100vw;
                     box-sizing: border-box;
                     display: flex;
                     justify-content: space-between;
+
 
                     ul {
                         height: 100%;
@@ -58,6 +169,14 @@ body {
                         }
                     }
 
+                    .right {
+                        padding-right: 20px;
+                        .enter:hover {
+                            border-bottom: solid 2px #FF6663;
+                            padding-bottom: 0.2rem;
+                        }
+                    }
+
                     .left-and-right {
                         width: 25%;
                         justify-content: space-around;
@@ -66,12 +185,9 @@ body {
                         .pure {
                             color: #FF6663;
                             font-weight: bold;
+                            font-size: 1.8em;
                         }
 
-                        .enter:hover {
-                            border-bottom: solid 2px #FF6663;
-                            padding-bottom: 0.2rem;
-                        }
 
                         // #enter {
                         //     border-bottom: solid 2px #FF6663;
@@ -92,7 +208,7 @@ body {
                     }
 
                     .mid {
-                        width: 45%;
+                        width: 60%;
 
                         li {
                             width: 20%;
@@ -150,16 +266,7 @@ body {
                                 padding-bottom: 10px;
                             }
 
-                            #easiest {
-                                text-decoration: underline #a5a5a5;
-                                animation: easiestMove 3s infinite;
-                            }
-
-                            @keyframes easiestMove {
-                                50% {
-                                    text-decoration-color: rgb(0, 0, 0);
-                                }
-                            }
+                           
                         }
 
                         .list {
@@ -183,6 +290,16 @@ body {
                                 background-color: #FF6663;
                                 color: white;
                                 width: 20rem;
+                                #easiest {
+                                    background-color: #ffbb63;
+                                    animation: easiestMove 3s infinite;
+                                }
+    
+                                @keyframes easiestMove {
+                                    50% {
+                                        background-color: rgb(255, 206, 99);
+                                    }
+                                }
                             }
                         }
 
@@ -239,6 +356,6 @@ body {
         }
     }
 
-    
-}
+ 
+
 

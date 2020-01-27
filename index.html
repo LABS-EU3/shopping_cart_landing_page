@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pure Retail</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto&display=swap" rel="stylesheet">
     
@@ -16,17 +17,21 @@
                 <nav>
                     <ul class="left-and-right left">
                         <li class="pure">PureRetail</li>
-                    </ul>  
+                    </ul>
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <div class="menu">
                     <ul class='mid'>
                         <li>How it works</li>
                         <li>Pricing</li>
                         <li>FAQ</li>
                         <li>Support</li>
                     </ul>
-                    <ul class="left-and-right">
+                    <ul class="right">
                         <li class='enter' id='enter'><a href="https://app.pure-retail.com/register" style="text-decoration: none; color: inherit">Sign Up</a></li>
                         <li class='enter'><a href="https://app.pure-retail.com/" style="text-decoration: none; color: inherit">Log In</a></li>
                     </ul>
+                </div>
                 </nav>
             </div>
                 
@@ -34,18 +39,18 @@
                 <div class='content-box'>
                     <div class="copy">
                         <div class='main-text'>
-                            <h1>The <span id='easiest'>easiest</span> way
+                            <h1>The <span>easiest</span> way
                                 to sell. Period.
                             </h1>
                         </div>
                         <div class="list">
                             <p>Pure-Retail is the easiest-to-use shopping cart for everyone - no matter how much technical knowledge you have. </p>
                             <a href="https://app.pure-retail.com/register" style="text-decoration: none; color: inherit">
-                                <button>Get started for free</button>
+                                <button id='easiest'>Get started for free</button>
                             </a>
                         </div>
                         <div class='testemonials'>
-                            <p>“It just bloody works!”
+                            <p style="color: rgb(255, 216, 157)">“It just bloody works!”
                                 </p>
                             <p id='names'>Locke Lamora, <span>Blade Craftsman</span> </br>
                                 <span>Emberlain</span>
@@ -68,45 +73,68 @@
         <div class="yellow-page">
             <div class='top-text'>
                 <div class="head">
-                    <h1>Spend less time setting up your store, </br>
-                        and more time just selling</h1>
+                    <h1>An online store that acts like your physical one</br>
                 </div>
             </div>
-            <div class="shots">
-                <div class="shot-block">
-                    <div class="screens onethree">
-                        <img alt='screens' src='images/run.png'/>
-                        <div class="text-box">
-                            <h3>Set up your merchant </br>
-                                account in 3 easy steps</h3>
-                            <p>All it takes to set up a store is </br>
-                                your name, your preferred currency </br>
-                                and your store name. Who knew?</p>
-                        </div>
-                    </div>
-                    <div class="screens two">
-                        <img alt='screens' src='images/redhair.png'/>
-                        <div class="text-box">
-                            <h3>Even better ways to </br>
-                                get paid</h3>
-                            <p>Receive payment by card? Check. </br>
-                                Receive payment by USSD. Yup. </br>
-                                Get paid in person? Absolutely.</p>
-                        </div>
-                    </div>
-                    <div class="screens onethree">
-                        <img alt='screens' src='images/family.png'/>
-                        <div class="text-box">
-                            <h3>Sell as easy as sending a text</h3>
-                            <p>Manage your store from your phone. </br>
-                                Share one link anywhere - via WhatsApp, </br>
-                                email, social media, SMS or even in person.</p>
-                        </div>
-                    </div>
+            
+            <div class="mid-point">
+                <div class="divider">
+                    <img src="./images/mistake.png"/>
+                    <h3>Setting up your store can feel <i>gnarly</i> - like tackling a monstrous octopus. We've taken all that crap out of the way and replaced it with a big red button. Press once to upload stock!</h3>
+                </div>
+                <div class="divider">
+                    <img src="./images/payment.png"/>
+                    <h3>Do deliveries if you want. Don't if you don't want to. We let you do what you want to do, and nothing more. Live your best life!</h3>
+                </div>
+                <div class="divider">
+                    <img src="./images/relax.png"/>
+                    <h3> Manage your inventory, check your earning history and market your store via a dedicated link all on THE SAME app. It's convenient, just as you always fantasized. </h3>
                 </div>
             </div>
+
         </div>
     </div>
+    <footer>
+            <div class="in-links">
+                <ul>
+                    <li>
+                        About
+                    </li>
+                    <li>
+                        Team
+                    </li>
+                    <li>
+                        User Reviews
+                    </li>
+                    <li>
+                        Lab
+                    </li>
+                    <li>
+                        Careers
+                    </li>
+                    <li>
+                        Subscription
+                    </li>
+                </ul>
+            </div>
+            <div class="media">
+            <ul>
+                <li>Blog</li>
+                <li>Pure-Retail in the news</li>
+                <li>How we built this</li>
+                <li>Newsletter</li>
+                <li>Press kit</li>
+            </ul>    
+            </div class="media">
+             </div>
+            <div class="contact">
+            <span>
+                Address: 224 Downing Street, London. <br/>
+                Phone: +4413267898 <br/>
+                email: info@pure-retail.com
+            </span>
+         </div>
+    </footer>
     <script src='./javascript/header.js'></script>
 </body>
 </html>
