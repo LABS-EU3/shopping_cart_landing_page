@@ -5,13 +5,14 @@ body {
   overflow-x: hidden;
 }
 body .first-view {
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #787878;
+  margin: 0 auto;
 }
 body .first-view .main-container {
   width: 100%;
@@ -21,30 +22,26 @@ body .first-view .main-container {
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
+  /* header */
   /* menu */
   /* menu icon */
   /* menu btn */
+  /* 48em = 768px */
+  /* menu */
+  /* menu icon */
 }
-body .first-view .main-container .navbar {
-  padding-left: 6%;
-  padding-right: 6%;
-  background-color: #fff;
-  width: 100%;
-  height: 10%;
-  padding-top: 1%;
-  font-size: 18px;
+body .first-view .main-container body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #f4f4f4;
 }
-body .first-view .main-container .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
+body .first-view .main-container a {
+  color: #000;
 }
 body .first-view .main-container .header {
   background-color: #fff;
-  box-shadow: 1px 1px 4px 0 #dddddd;
-  padding-top: 1%;
-  width: 100vw;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
   z-index: 3;
 }
 body .first-view .main-container .header ul {
@@ -53,6 +50,13 @@ body .first-view .main-container .header ul {
   list-style: none;
   overflow: hidden;
   background-color: #fff;
+  font-size: 1.6em;
+  color: #707070;
+}
+body .first-view .main-container .header ul li:hover {
+  border-bottom: solid 2px #FF6663;
+  padding-bottom: 0.2rem;
+  color: black;
 }
 body .first-view .main-container .header li a {
   display: block;
@@ -64,6 +68,14 @@ body .first-view .main-container .header li a:hover,
 body .first-view .main-container .header .menu-btn:hover {
   background-color: #f4f4f4;
 }
+body .first-view .main-container .header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #ff6669;
+}
 body .first-view .main-container .header .menu {
   clear: both;
   max-height: 0;
@@ -71,7 +83,7 @@ body .first-view .main-container .header .menu {
 }
 body .first-view .main-container .header .menu-icon {
   cursor: pointer;
-  display: block;
+  display: inline-block;
   float: right;
   padding: 28px 20px;
   position: relative;
@@ -120,56 +132,27 @@ body .first-view .main-container .header .menu-btn:checked ~ .menu-icon:not(.ste
 body .first-view .main-container .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
-body .first-view .main-container nav {
-  height: 90%;
-  width: 100vw;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 48em) {
+  body .first-view .main-container .header li {
+    float: left;
+  }
+  body .first-view .main-container .header li a {
+    padding: 20px 30px;
+  }
+  body .first-view .main-container .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  body .first-view .main-container .header .menu-icon {
+    display: none;
+  }
 }
-body .first-view .main-container nav ul {
-  height: 100%;
-  display: flex;
-  font-size: 1.6rem;
-}
-body .first-view .main-container nav ul li {
-  cursor: pointer;
-}
-body .first-view .main-container nav .right {
-  padding-right: 20px;
-}
-body .first-view .main-container nav .right .enter:hover {
-  border-bottom: solid 2px #FF6663;
-  padding-bottom: 0.2rem;
-}
-body .first-view .main-container nav .left-and-right {
-  width: 25%;
-  justify-content: space-around;
-  text-decoration: none;
-}
-body .first-view .main-container nav .left-and-right .pure {
-  color: #FF6663;
-  font-weight: bold;
-  font-size: 1.8em;
-}
-body .first-view .main-container nav .left-and-right li {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-body .first-view .main-container nav .left {
-  padding-right: 10rem;
-}
-body .first-view .main-container nav .mid {
-  width: 60%;
-}
-body .first-view .main-container nav .mid li {
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body .first-view .main-container .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 body .first-view .content {
   height: 90%;

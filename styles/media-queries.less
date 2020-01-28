@@ -1,4 +1,21 @@
-@media only screen and (max-width: 850px) {
+@media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }   
+
+@media only screen and (max-width: 1000px) {
 
     body {
         margin: 0;
@@ -214,6 +231,7 @@
             }
             img {
                 width: 50vw;
+                padding: 20px 0px 20px 0px;
             }
         }
         footer {
@@ -228,20 +246,3 @@
         
     }
 }
-
-@media (min-width: 48em) {
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 20px 30px;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none;
-    }
-  }   

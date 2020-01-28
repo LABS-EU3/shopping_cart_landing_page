@@ -7,6 +7,7 @@
 }
 .second-view {
   font-family: PT Serif;
+  margin: 0 auto;
 }
 .second-view .yellow-page {
   background-color: #ffdb8c;
