@@ -15,25 +15,25 @@
     }
   }   
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
 
     body {
         margin: 0;
         padding: 0;
         background-color: #000;
         box-sizing: border-box;
-        width: 100vw;
+        width: 100%;
 
         .first-view {
             display: block;
-            height: 140vh;
+            // height: 140vh;
 
 
             .main-container {
                 display: block;
 
                 .header {
-
+                    width: 100vw;
                     nav {
                         width: 80vw;
                         margin: 0 auto;
@@ -124,50 +124,9 @@
                         }
                     }
 
-                    .image {
-                        display: flex;
-                        flex-direction: row;
-                        width: 80vw;
-                        justify-content: center;
-                        align-items: center;
-
-                        // max-width: 80vw;
-                        // height: 100vh;
-                        // width: 40px;
-
-                        .phones {
-                            display: flex;
-                            max-width: 100%;
-                            width:100%;
-                            margin: 0 auto;
-                            justify-content: center;
-                            align-items: center;
-
-                            img {
-                                display: flex;
-                                max-width: 70vw;
-                                height: 70vh;
-                            }
-                        }
-
-                        .first {
-                            display: block;
-                            max-width: 50%;
-                            width: 50%;
-                            margin-top: 50px;
-                            margin-right: -20px;
-                            margin-left: -20px;
-                            // display: none;
-                        }
-
-                        .second {
-                            width: 50%;
-                            max-width: 50%;
-                            margin-top: -100px;
-                            // margin-right: 3px;
-                            // display: none;
-                            // padding-left: -20px;
-                            // margin-bottom: -12px;
+                    .jumbo {
+                        img {
+                            width: 80vw;
                         }
                     }
                 }
@@ -197,7 +156,7 @@
                         justify-content: center;
                         align-items: center;
                         width: 90vw;
-                        padding-top: 40px;
+                        padding-top: 10px;
                         img {
                             width: 90vw;
                             max-width: 400px;

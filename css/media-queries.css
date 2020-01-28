@@ -14,20 +14,22 @@
     display: none;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   body {
     margin: 0;
     padding: 0;
     background-color: #000;
     box-sizing: border-box;
-    width: 100vw;
+    width: 100%;
   }
   body .first-view {
     display: block;
-    height: 140vh;
   }
   body .first-view .main-container {
     display: block;
+  }
+  body .first-view .main-container .header {
+    width: 100vw;
   }
   body .first-view .main-container .header nav {
     width: 80vw;
@@ -107,38 +109,8 @@
     margin-top: 5px;
     text-align: center;
   }
-  body .first-view .main-container .content .image {
-    display: flex;
-    flex-direction: row;
+  body .first-view .main-container .content .jumbo img {
     width: 80vw;
-    justify-content: center;
-    align-items: center;
-  }
-  body .first-view .main-container .content .image .phones {
-    display: flex;
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-  }
-  body .first-view .main-container .content .image .phones img {
-    display: flex;
-    max-width: 70vw;
-    height: 70vh;
-  }
-  body .first-view .main-container .content .image .first {
-    display: block;
-    max-width: 50%;
-    width: 50%;
-    margin-top: 50px;
-    margin-right: -20px;
-    margin-left: -20px;
-  }
-  body .first-view .main-container .content .image .second {
-    width: 50%;
-    max-width: 50%;
-    margin-top: -100px;
   }
   body .second-view {
     font-family: PT Serif;
@@ -164,7 +136,7 @@
     justify-content: center;
     align-items: center;
     width: 90vw;
-    padding-top: 40px;
+    padding-top: 10px;
   }
   body .second-view .yellow-page .mid-point .divider img {
     width: 90vw;
