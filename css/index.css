@@ -461,12 +461,28 @@ body .first-view .content .jumbo img {
   }
   body .first-view {
     display: block;
+    height: 70%;
+    width: 100%;
   }
   body .first-view .main-container {
     display: block;
   }
   body .first-view .main-container .header {
     width: 100vw;
+    background-color: black;
+    color: white;
+  }
+  body .first-view .main-container .header .logo {
+    color: #ff6669;
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+  body .first-view .main-container .header .menu-icon .navicon {
+    background-color: white;
+  }
+  body .first-view .main-container .header .menu-icon .navicon:before,
+  body .first-view .main-container .header .menu-icon .navicon:after {
+    background-color: white;
   }
   body .first-view .main-container .header nav {
     width: 80vw;
@@ -502,10 +518,12 @@ body .first-view .content .jumbo img {
     width: 90vw;
     margin: 0 auto;
     padding: 0;
-    padding-top: 40px;
   }
   body .first-view .main-container .content .content-box .copy .main-text {
     display: block;
+    height: 10%;
+    padding: 0;
+    margin: 0;
   }
   body .first-view .main-container .content .content-box .copy .main-text h1 {
     font-size: 3.5em;
@@ -515,15 +533,15 @@ body .first-view .content .jumbo img {
     text-align: center;
   }
   body .first-view .main-container .content .content-box .copy .list {
-    height: 100%;
     margin-top: 1em;
     padding: 0;
   }
   body .first-view .main-container .content .content-box .copy .list p {
-    font-size: 1.7em;
+    font-size: 1.9em;
     line-height: 1.2em;
     color: #bebebe;
     text-align: center;
+    margin-bottom: 10px;
   }
   body .first-view .main-container .content .content-box .copy .list button {
     display: flex;
@@ -551,9 +569,10 @@ body .first-view .content .jumbo img {
   }
   body .second-view {
     font-family: PT Serif;
+    width: 100%;
   }
   body .second-view .yellow-page {
-    height: 250vh;
+    height: 100%;
   }
   body .second-view .yellow-page .top-text .head {
     padding-top: 200px;
@@ -572,11 +591,11 @@ body .first-view .content .jumbo img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90vw;
+    width: 100%;
     padding-top: 10px;
   }
   body .second-view .yellow-page .mid-point .divider img {
-    width: 90vw;
+    width: 70%;
     max-width: 400px;
     height: 100%;
     margin: 0 auto;
@@ -586,7 +605,7 @@ body .first-view .content .jumbo img {
     padding-top: 28px;
     font-size: 2.3em;
     text-align: center;
-    width: 400px;
+    width: 80%;
     font-family: 'Acme';
     color: #585858;
     line-height: 1.5;
@@ -613,6 +632,7 @@ body .first-view .content .jumbo img {
     justify-content: center;
     text-align: center;
     font-size: 1.5em;
+    height: 100%;
   }
 }
 footer {
