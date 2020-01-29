@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Volkhov';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Volkhov Bold'), local('Volkhov-Bold'), url(https://fonts.gstatic.com/s/volkhov/v11/SlGVmQieoJcKemNeeY4hkHNSaA.ttf) format('truetype');
+}
+.howitworks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 90%;
+  margin: 100px auto 0 auto;
+  background-color: #ff6669;
+  border-radius: 20px;
+  padding: 40px;
+}
+.howitworks .image {
+  display: flex;
+  width: 45%;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.howitworks .image img {
+  width: 100%;
+  animation: MoveUpDown 1s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+.howitworks .text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+.howitworks .text h2 {
+  font-family: 'Volkhov', serif;
+  font-size: 7em;
+  line-height: 1.2;
+  text-align: justify;
+}
+.howitworks .text p {
+  font-size: 1.8em;
+  line-height: 1.6;
+  color: #1b1b1b;
+}
+.howitworks .text button {
+  border: 0;
+  padding: 1.6rem;
+  font-size: 1.9rem;
+  border-radius: 1.8rem;
+  background-color: #252525;
+  color: white;
+  width: 20rem;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 0 #575757;
+}
+.howitworks .text button:hover {
+  background-color: #494949;
+}
+.faq {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 100px auto 0 auto;
+  padding: 40px;
+}
+.faq h2 {
+  font-family: 'Volkhov', serif;
+  font-size: 4em;
+  line-height: 4;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.faq .questionwrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.faq .questions {
+  width: 30%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.faq .questions h2 {
+  font-size: 3em;
+  text-align: left;
+  padding-bottom: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 1;
+}
+.faq .questions p {
+  font-size: 2em;
+}
+.cards {
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.cards h2 {
+  font-size: 4em;
+  font-family: 'PT Serif';
+  color: #2a2a3b;
+  text-align: center;
+}
+.cards img {
+  padding-top: 50px;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}

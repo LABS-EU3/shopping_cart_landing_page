@@ -7,12 +7,10 @@
 }
 .second-view {
   font-family: PT Serif;
-  width: 100%;
-  margin: 0 auto;
 }
 .second-view .yellow-page {
   background-color: #ffdb8c;
-  height: 100%;
+  height: 100vh;
 }
 .second-view .yellow-page .top-text .head {
   font-size: 4em;
@@ -35,7 +33,6 @@
   align-items: center;
   width: 27%;
   padding-top: 40px;
-  padding-bottom: 60px;
 }
 .second-view .yellow-page .mid-point .divider img {
   width: 400px;
@@ -50,5 +47,4 @@
   font-family: 'Acme';
   color: #585858;
   line-height: 1.5;
-  margin-bottom: 50px;
 }
