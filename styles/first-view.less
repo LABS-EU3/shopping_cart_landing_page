@@ -3,10 +3,15 @@ body {
     font-family: 'Roboto', sans-serif;
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+    background-image: url('/images/bg.png');
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: 70rem 17rem;
 
 
     .first-view {
-        width: 90vw;
+        width: 90%;
         height: 100vh;
         box-sizing: border-box;
         display: flex;
@@ -37,10 +42,11 @@ body {
               /* header */
               
               .header {
-                background-color: #fff;
+                background-color:inherit;
                 box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
                 // position: fixed;
                 width: 100%;
+                padding-left: 40px;
                 z-index: 3;
               }
               
@@ -62,11 +68,14 @@ body {
                 padding: 20px 20px;
                 border-right: 1px solid #f4f4f4;
                 text-decoration: none;
+                font-size:1.5em;
+                padding-bottom: 10px;
               }
               
               .header li a:hover,
               .header .menu-btn:hover {
-                background-color: #f4f4f4;
+                border-bottom: solid 2px #FF6663;
+                                padding-bottom: 0.2rem;
               }
               
               .header .logo {
@@ -187,6 +196,7 @@ body {
                 top: 0;
                 width: 100%;
                 z-index: 999;
+                background-color: #fff;
               }
 
             //   .header {
@@ -399,6 +409,8 @@ body {
                 //     }
                 // }
             }
+        
+            
 
             .content {
                 height: 90%;
@@ -450,6 +462,17 @@ body {
                                 color: black;
                                 font-weight: bold;
                                 padding-bottom: 10px;
+
+                                .underline--magical {
+                                    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+                                    background-repeat: no-repeat;
+                                    background-size: 100% 0.2em;
+                                    background-position: 0 88%;
+                                    transition: background-size 0.25s ease-in;
+                                    &:hover {
+                                      background-size: 100% 88%;
+                                    }
+                                  }
                             }
 
                            
@@ -473,10 +496,14 @@ body {
                                 padding: 1.6rem;
                                 font-size: 1.9rem;
                                 border-radius: 2.5rem;
-                                background-color: #FF6663;
+                                background-color: rgb(37, 37, 37);
                                 color: white;
                                 width: 20rem;
+                                cursor: pointer;
                                 }
+                            button:hover {
+                                background-color: rgb(73, 73, 73) ;
+                            }
                             
                         }
 

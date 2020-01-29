@@ -3,9 +3,14 @@ body {
   font-family: 'Roboto', sans-serif;
   overflow-y: scroll;
   overflow-x: hidden;
+  background-color: #ffffff;
+  background-image: url('/images/bg.png');
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: 70rem 17rem;
 }
 body .first-view {
-  width: 90vw;
+  width: 90%;
   height: 100vh;
   box-sizing: border-box;
   display: flex;
@@ -39,9 +44,10 @@ body .first-view .main-container a {
   color: #000;
 }
 body .first-view .main-container .header {
-  background-color: #fff;
+  background-color: inherit;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   width: 100%;
+  padding-left: 40px;
   z-index: 3;
 }
 body .first-view .main-container .header ul {
@@ -60,10 +66,13 @@ body .first-view .main-container .header li a {
   padding: 20px 20px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
+  font-size: 1.5em;
+  padding-bottom: 10px;
 }
 body .first-view .main-container .header li a:hover,
 body .first-view .main-container .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  border-bottom: solid 2px #FF6663;
+  padding-bottom: 0.2rem;
 }
 body .first-view .main-container .header .logo {
   display: block;
@@ -149,6 +158,7 @@ body .first-view .main-container .sticky {
   top: 0;
   width: 100%;
   z-index: 999;
+  background-color: #fff;
 }
 body .first-view .content {
   height: 90%;
@@ -196,6 +206,16 @@ body .first-view .content .content-box .copy .main-text h1 {
   font-weight: bold;
   padding-bottom: 10px;
 }
+body .first-view .content .content-box .copy .main-text h1 .underline--magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+body .first-view .content .content-box .copy .main-text h1 .underline--magical:hover {
+  background-size: 100% 88%;
+}
 body .first-view .content .content-box .copy .list {
   width: 100%;
   margin-bottom: 1rem;
@@ -212,9 +232,13 @@ body .first-view .content .content-box .copy .list button {
   padding: 1.6rem;
   font-size: 1.9rem;
   border-radius: 2.5rem;
-  background-color: #FF6663;
+  background-color: #252525;
   color: white;
   width: 20rem;
+  cursor: pointer;
+}
+body .first-view .content .content-box .copy .list button:hover {
+  background-color: #494949;
 }
 body .first-view .content .content-box .copy .testemonials {
   display: flex;

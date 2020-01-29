@@ -1,6 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Volkhov:700&display=swap');
+
+.howitworks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 90%;
+    margin: 100px auto 0 auto;
+    background-color:#ff6669;
+    border-radius: 20px;
+    padding: 40px;
+    .image {
+    display: flex;
+    width: 45%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    img {
+        width: 100%;
+        animation: MoveUpDown 1s linear infinite;
+        position: relative;
+        left: 0;
+        bottom: 0;
+ }
+        @keyframes MoveUpDown {
+            0%, 100% {
+            bottom: 0;
+            }
+            50% {
+            bottom: 20px;
+            }
+        }
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0 auto;
+        h2 {
+            font-family: 'Volkhov', serif;
+            font-size: 7em;
+            line-height: 1.2;
+            text-align: justify;
+        }
+        p {
+            font-size: 1.8em;
+            line-height: 1.6;
+            color: rgb(27, 27, 27);
+            // text-align: justify;
+        }
+        button {
+            border: 0;
+            padding: 1.6rem;
+            font-size: 1.9rem;
+            border-radius: 1.8rem;
+            background-color: rgb(37, 37, 37);
+            color: white;
+            width: 20rem;
+            margin-top: 20px;
+            cursor: pointer;
+            box-shadow: 1px 1px 1px 0 rgb(87, 87, 87);
+        }
+        button:hover {
+            background-color: rgb(73, 73, 73) ;
+        }
+    }
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 100px auto 0 auto;
+    // background-color:#ffe6b7;
+    // border-radius: 20px;
+    padding: 40px;
+    h2 {
+        font-family: 'Volkhov', serif;
+        font-size: 4em;
+        line-height: 4;
+        text-align: center;
+        padding-bottom: 20px;
+        }
+    .questionwrapper {
+        display: flex; 
+        justify-content: space-between;
+
+        }
+        .questions {
+            width: 30%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-evenly;
+            h2 {
+            font-size:3em;
+            text-align: left;
+            padding-bottom: 20px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            line-height: 1;
+        }
+        p {
+            font-size: 2em;
+        }
+
+    }
+}
 
 .cards {
-    // width: 90vw;
+    width: 90vw;
     margin: 0 auto;
     padding-top: 50px;
     h2 {

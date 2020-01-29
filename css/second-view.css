@@ -7,11 +7,12 @@
 }
 .second-view {
   font-family: PT Serif;
+  width: 100%;
   margin: 0 auto;
 }
 .second-view .yellow-page {
   background-color: #ffdb8c;
-  height: 110vh;
+  height: 100%;
 }
 .second-view .yellow-page .top-text .head {
   font-size: 4em;
